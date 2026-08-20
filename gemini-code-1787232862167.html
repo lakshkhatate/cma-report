@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AUDITED BIRTHDAY REPORT | FY 2026</title>
+  <style>
+    :root {
+      --bg-color: #0c1017;
+      --panel-bg: #161b22;
+      --border-color: #30363d;
+      --text-main: #c9d1d9;
+      --green-accent: #3fb950;
+      --gold-accent: #d29922;
+      --font-mono: 'Courier New', Courier, monospace;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .dashboard {
+      max-width: 800px;
+      width: 100%;
+      background: var(--panel-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+
+    .header {
+      border-bottom: 2px solid var(--gold-accent);
+      padding-bottom: 12px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 1.4rem;
+      color: var(--gold-accent);
+      font-family: var(--font-mono);
+      letter-spacing: 1px;
+    }
+
+    .status-badge {
+      background: rgba(63, 185, 80, 0.15);
+      color: var(--green-accent);
+      padding: 4px 10px;
+      border-radius: 12px;
+      font-size: 0.8rem;
+      font-weight: bold;
+      border: 1px solid var(--green-accent);
+    }
+
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .metric-card {
+      background: var(--bg-color);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      padding: 16px;
+      text-align: center;
+    }
+
+    .metric-title {
+      font-size: 0.8rem;
+      color: #8b949e;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .metric-value {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--green-accent);
+      font-family: var(--font-mono);
+    }
+
+    .statement-section {
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      padding: 16px;
+      background: var(--bg-color);
+      margin-bottom: 24px;
+    }
+
+    .statement-title {
+      font-family: var(--font-mono);
+      color: var(--gold-accent);
+      margin-top: 0;
+      margin-bottom: 12px;
+      font-size: 1.1rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+    }
+
+    th, td {
+      padding: 8px 12px;
+      text-align: left;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    th {
+      color: #8b949e;
+      font-weight: 600;
+    }
+
+    .val-col {
+      text-align: right;
+      font-family: var(--font-mono);
+    }
+
+    .positive { color: var(--green-accent); }
+
+    .action-btn {
+      width: 100%;
+      background: var(--green-accent);
+      color: #000;
+      border: none;
+      padding: 14px;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+
+    .action-btn:hover { opacity: 0.9; }
+
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0,0,0,0.8);
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .modal-content {
+      background: var(--panel-bg);
+      border: 2px solid var(--gold-accent);
+      border-radius: 8px;
+      padding: 24px;
+      max-width: 500px;
+      text-align: center;
+    }
+
+    .modal-content h2 {
+      color: var(--gold-accent);
+      font-family: var(--font-mono);
+      margin-top: 0;
+    }
+
+    .close-btn {
+      margin-top: 16px;
+      background: transparent;
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div class="dashboard">
+  <div class="header">
+    <h1>AUDITED BIRTHDAY REPORT</h1>
+    <span class="status-badge">STATUS: UNCONDITIONALLY APPROVED</span>
+  </div>
+
+  <div class="metrics-grid">
+    <div class="metric-card">
+      <div class="metric-title">Happiness CAGR</div>
+      <div class="metric-value">+100.0%</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-title">CMA Pass Probability</div>
+      <div class="metric-value">99.9%</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-title">Net Emotional Worth</div>
+      <div class="metric-value">Priceless</div>
+    </div>
+  </div>
+
+  <div class="statement-section">
+    <h3 class="statement-title">STATEMENT OF FINANCIAL POSITION (BALANCE SHEET)</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>Item</th>
+          <th class="val-col">Valuation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Current Asset</strong></td>
+          <td>Brilliance & Work Ethic</td>
+          <td class="val-col positive">MAX_CAPACITY</td>
+        </tr>
+        <tr>
+          <td><strong>Fixed Asset</strong></td>
+          <td>Long-Term Potential</td>
+          <td class="val-col positive">Infinite</td>
+        </tr>
+        <tr>
+          <td><strong>Liability</strong></td>
+          <td>Study Stress & Self-Doubt</td>
+          <td class="val-col" style="color: #f85149;">Written Off ($0.00)</td>
+        </tr>
+        <tr>
+          <td><strong>Equity</strong></td>
+          <td>Happiness Reserve</td>
+          <td class="val-col positive">Surplus</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <button class="action-btn" onclick="openModal()">EXECUTE BIRTHDAY WISHES.EXE</button>
+</div>
+
+<div class="modal" id="wishModal">
+  <div class="modal-content">
+    <h2>AUDITOR'S FINAL OPINION</h2>
+    <p>Happy Birthday! 🎂</p>
+    <p>After a thorough audit of your qualities, the findings are clear: you are on track to crush the CMA exams and achieve everything you've set your sights on. Keep rising!</p>
+    <button class="close-btn" onclick="closeModal()">Close Statement</button>
+  </div>
+</div>
+
+<script>
+  function openModal() {
+    document.getElementById('wishModal').style.display = 'flex';
+  }
+  function closeModal() {
+    document.getElementById('wishModal').style.display = 'none';
+  }
+</script>
+
+</body>
+</html>
